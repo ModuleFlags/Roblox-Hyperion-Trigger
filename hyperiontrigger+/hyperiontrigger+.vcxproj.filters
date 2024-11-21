@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\xorstr">
+      <UniqueIdentifier>{ecadcc51-6b7c-4b40-8021-18ffdd69e98a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hyperion">
+      <UniqueIdentifier>{6a118639-8e8e-461d-81e4-f81fb5a33f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\roblox">
+      <UniqueIdentifier>{38c92e47-3e96-4f5e-8dcc-d42fca2b2727}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hyperiontrigger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\hyperionutils.cpp">
+      <Filter>Source Files\hyperion</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\roblox.cpp">
+      <Filter>Source Files\roblox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hyperion\hyperionutils.h">
+      <Filter>Source Files\hyperion</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\xorstr\xorstr.hpp">
+      <Filter>Source Files\xorstr</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\roblox.h">
+      <Filter>Source Files\roblox</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
