@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-std::string messagePart1 = XorStr("We’ve detected the use of unauthorized software or a suspicious modification while playing. This behavior is in direct violation of our game’s rules and could result in further actions.\n\n"
+std::string messagePart1 = XorStr("Weâ€™ve detected the use of unauthorized software or a suspicious modification while playing. This behavior is in direct violation of our gameâ€™s rules and could result in further actions.\n\n"
     "Warning: Using cheats, hacks, or third-party software compromises the integrity of the game and ruins the experience for others.\n\n"
     "Your actions have been flagged, and further investigation will be conducted.\n\n"
     "Do not attempt to rejoin or bypass this detection. Continued use of unauthorized software may lead to severe consequences.\n\n"
@@ -23,13 +23,12 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        // Encrypt the message using XOR
 
         MessageBoxA(
             NULL,
-            (messagePart1 + messagePart2).c_str(),  // Combine both parts and show the decrypted message
-            XorStr("Roblox"),  // Decrypted title
-            MB_OK | MB_ICONERROR  // Error icon with OK button
+            (messagePart1 + messagePart2).c_str(),
+            XorStr("Roblox"),
+            MB_OK | MB_ICONERROR
         );
         break;
     case DLL_THREAD_ATTACH:
